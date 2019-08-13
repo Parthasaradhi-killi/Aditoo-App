@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "247455152521",
+    "firebase_url": "https://karii-48.firebaseio.com",
+    "project_id": "karii-48",
+    "storage_bucket": "karii-48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247455152521:android:3df5628e32924cc9",
+        "android_client_info": {
+          "package_name": "com.kari.love"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247455152521-hgpatm6c3o8egfr2gajvm1s7n5sdvrrh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kari.love",
+            "certificate_hash": "cd1b8815bf4ab4882c9fda3a5692930865d34c11"
+          }
+        },
+        {
+          "client_id": "247455152521-7ph4nm6tcospipm85se2aqeu9tcapjje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL_BLM8i7Ia19sd6boDtcQx1zkKzTBHVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247455152521-7ph4nm6tcospipm85se2aqeu9tcapjje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

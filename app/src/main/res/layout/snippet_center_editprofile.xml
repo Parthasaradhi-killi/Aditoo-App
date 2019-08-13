@@ -1,0 +1,399 @@
+<merge    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel">
+
+            <RelativeLayout
+                android:id="@+id/relLay01"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                >
+
+                <!--Change cover pic-->
+                <ImageView
+                    android:id="@+id/cover_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/changeCoverPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Edit"
+                    android:textAlignment="center"
+                    android:background="#fff"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+
+            <!--Change profile pic-->
+            <RelativeLayout
+                android:id="@+id/relLay02"
+                android:layout_below="@+id/relLay01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="259dp"
+                    android:layout_marginRight="259dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/changeProfilePhoto"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="111dp"
+                    android:layout_marginEnd="276dp"
+                    android:layout_marginRight="276dp"
+                    android:background="#fff"
+                    android:text="Edit"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+
+            <!--Personal Information-->
+            <RelativeLayout
+                android:id="@+id/personalinfo"
+                android:layout_width="match_parent"
+                android:layout_below="@id/relLay02"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+
+                    android:text="Personal Information"
+                    android:layout_marginStart="7dp"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:background="@drawable/gray_border_button"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+
+            <!--Hometown-->
+            <RelativeLayout
+                android:id="@+id/relLay03"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/personalinfo"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_home"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/hometown"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Hometown"
+                    android:inputType="text" />
+
+            </RelativeLayout>
+            <!--Date of birth-->
+            <RelativeLayout
+                android:id="@+id/relLay04"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay03"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_cake"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/dateofbirth"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Date of Birth"
+                    android:inputType="date"/>
+
+            </RelativeLayout>
+            <!--College-->
+            <RelativeLayout
+                android:id="@+id/relLay05"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay04"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_book"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/College"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="College"
+                    android:inputType="textAutoCorrect"/>
+
+            </RelativeLayout>
+            <!--Branch-->
+            <RelativeLayout
+                android:id="@+id/relLay06"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay05"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_branch"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/Branch"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Branch and year"
+                    android:inputType="textAutoCorrect"/>
+
+            </RelativeLayout>
+            <!--My Slam-->
+            <RelativeLayout
+                android:id="@+id/relLay07"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay06"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_love"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/myslam"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="My Slam....!"
+                    android:inputType="text"/>
+
+            </RelativeLayout>
+            <!--Intrested in-->
+            <RelativeLayout
+                android:id="@+id/relLay08"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay07"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_likes"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/intrestedin"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Intrested in...."
+                    android:inputType="text"/>
+
+            </RelativeLayout>
+            <!--blog-->
+            <RelativeLayout
+                android:id="@+id/relLay09"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay08"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_blog"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/blog"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Blog"
+                    android:inputType="text"/>
+
+            </RelativeLayout>
+
+            <!--Private Information-->
+            <RelativeLayout
+                android:id="@+id/privacyinfo"
+                android:layout_width="match_parent"
+                android:layout_below="@id/relLay09"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Pravacy Settings"
+                    android:layout_marginStart="7dp"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:background="@drawable/gray_border_button"
+                    android:layout_marginLeft="7dp" />
+            </RelativeLayout>
+            <!--Email-->
+            <RelativeLayout
+                android:id="@+id/relLay10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/privacyinfo"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_mail"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Email "
+                    android:inputType="text"/>
+
+            </RelativeLayout>
+            <!--Phone Number-->
+            <RelativeLayout
+                android:id="@+id/relLay11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/relLay10"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_call"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:hint="Phone Number "
+                    android:inputType="text"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</merge>

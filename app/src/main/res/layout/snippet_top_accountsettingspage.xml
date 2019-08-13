@@ -1,0 +1,56 @@
+
+<merge    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/backArrw"
+                    android:src="@drawable/ic_backarrow"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginLeft="11dp" />
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/backArrw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Options"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/profileName"
+                    android:layout_marginLeft="10dp" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>
